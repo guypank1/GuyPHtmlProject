@@ -35,3 +35,7 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+@font-face {
+    font-family: 'Harry Potter';
+    src: url('https://www.fontsaddict.com/font/harry-potter.html');
+}

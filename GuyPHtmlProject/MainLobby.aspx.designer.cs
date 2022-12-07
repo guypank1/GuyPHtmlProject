@@ -11,7 +11,7 @@ namespace GuyPHtmlProject
 {
 
 
-    public partial class Login
+    public partial class MainLobby
     {
     }
 }

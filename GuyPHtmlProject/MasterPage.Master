@@ -5,15 +5,27 @@
 <html>
 <head runat="server">
     <title></title>
+
+    <style>
+        h1 { text-align: center}
+    </style>
+
+    <!--~~~~~~~~~~~~~~~~~~ Head Place Holder - שומר מקום לחלק העיצובי ~~~-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </head>
 <body>
 
-        <div>
+
+    <h1>
+        hi
+    </h1>
+        
+    <!--~~~~~~~~~~~~~~~~~~~~ Body Place Holder - שומר מקום לחלק התוכן ~~~-->
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
-
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </body>
 </html>
