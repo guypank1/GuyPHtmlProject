@@ -121,6 +121,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\CheckMyForm.js" />
     <Content Include="SignUp.aspx" />
     <Content Include="MainLobby.aspx" />
     <Content Include="MasterPage.Master" />

@@ -14,6 +14,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form method="post" runat="server" onsubmit="return chkForm();">
     <table style ="width: 1px">
         <tr>
             <th></th>
@@ -23,26 +24,46 @@
 
         <tr>
             <td>שם משתמש</td>
-            <td>INPUT</td>
-            <td>OUTPUT</td>
+            <td>
+                <input type="text" id="uName" name="uName" /></td>
+            <td>
+                <input type="text" id="muName"size="50"
+                    style ="display: none; backround-color: silver; font-weight: bold;"
+                    disabled="disabled" />
+            </td>
         </tr>
 
         <tr>
-            <td>שם פרטי</td>
-            <td>INPUT</td>
-            <td>OUTPUT</td>
+            <td>שם פרטי:</td>
+            <td>
+                <input type="text" name="fName" id="fName" /></td>
+            <td>
+                <input type="text" id="mfName"size="50"
+                    style ="display: none; backround-color: silver; font-weight: bold;"
+                    disabled="disabled" />
+            </td>
         </tr>
 
         <tr>
-            <td>שם משפחה</td>
-            <td>INPUT</td>
-            <td>OUTPUT</td>
+            <td>שם משפחה:</td>
+               <td>
+                <input type="text" name="lName" id="lName" /></td>
+            <td>
+                <input type="text" id="mlName"size="50"
+                    style ="display: none; backround-color: silver; font-weight: bold;"
+                    disabled="disabled" />
+            </td>
         </tr>
 
         <tr>
-            <td>דוא"ל</td>
-            <td>INPUT</td>
-            <td>OUTPUT</td>
+            <td>כתובת דוא"ל</td>
+            <td>
+                <input type="email" name="email" id="email" /></td>
+            <td>
+                <input type="text" id="mEmail"size="50"
+                    style ="display: none; backround-color: silver; font-weight: bold;"
+                    disabled="disabled" />
+                </td>
         </tr>
 
         <tr>
@@ -84,5 +105,18 @@
             <td>INPUT</td>
             <td></td>
         </tr>
-    </table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td><br /></td>
+            <td colspan="2" style="text-align: center;">
+                <input type ="submit" name="submit" value="  שלח  " />
+                <input type="reset" />
+                </td>
+             </tr>
+        </table>
+       </form>
+    <br />
+    <%= st %>
 </asp:Content>
