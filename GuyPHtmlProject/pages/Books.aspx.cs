@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GuyPHtmlProject
+namespace GuyPHtmlProject.pages
 {
-    public partial class MainLobby : System.Web.UI.Page
+    public partial class Books : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

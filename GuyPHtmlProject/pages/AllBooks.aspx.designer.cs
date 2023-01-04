@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GuyPHtmlProject
+namespace GuyPHtmlProject.pages
 {
 
 
-    public partial class MainLobby
+    public partial class AllBooks
     {
     }
 }
