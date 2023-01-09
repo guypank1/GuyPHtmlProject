@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="GuyPHtmlProject.pages.MainPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~\MasterPage.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="GuyPHtmlProject.pages.MainPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     
@@ -11,10 +11,21 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 html {
-    background-image: url('images\harrypoter-pattern.png');
+
+
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/310/209/217/harry-potter-computer-backgrounds-wallpaper-preview.jpg');
+     /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+
 }
+
+
+
 .wrapper{
   position: fixed;
   top: 0;
@@ -75,7 +86,7 @@ html {
   color: #fff;
   position: relative;
   line-height: 50px;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 .wrapper ul li a:after{
   position: absolute;
@@ -116,18 +127,19 @@ input[type="checkbox"]{
   font-size: 35px;
   font-weight: 600;
 }
+
    </style>
-
-
-
-    <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Fullscreen Overlay Navigation | CodingNepal</title>
+       <title></title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
+
+
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <!DOCTYPE html>
+<html>
    <body>
       <input type="checkbox" id="active">
       <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
@@ -150,39 +162,4 @@ input[type="checkbox"]{
    </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-   </body>
-</html>
-
-
-
-
-
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</asp:Content>
+    </asp:Content>

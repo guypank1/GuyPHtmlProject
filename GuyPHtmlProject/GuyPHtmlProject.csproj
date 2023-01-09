@@ -125,6 +125,7 @@
     <Content Include="images\harrypoter-pattern.png" />
     <Content Include="pages\AllBooks.aspx" />
     <Content Include="pages\Books.aspx" />
+    <Content Include="pages\LoginToWebsite.aspx" />
     <Content Include="pages\MainPage.aspx" />
     <Content Include="pages\Movies.aspx" />
     <Content Include="pages\signup.aspx" />
@@ -213,6 +214,13 @@
     </Compile>
     <Compile Include="pages\Books.aspx.designer.cs">
       <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\LoginToWebsite.aspx.cs">
+      <DependentUpon>LoginToWebsite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\LoginToWebsite.aspx.designer.cs">
+      <DependentUpon>LoginToWebsite.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>

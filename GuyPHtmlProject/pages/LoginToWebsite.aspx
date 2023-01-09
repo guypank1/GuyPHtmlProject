@@ -156,10 +156,7 @@ input[type=submit]:hover {
           </i> Login with Google+
         </a>
       </div>
-
-      <div class="col">
-        <div class="hide-md-lg">
-          <p>Or sign in manually:</p>
+        
         </div>
 
         <input type="text" name="username" placeholder="Username" required>
