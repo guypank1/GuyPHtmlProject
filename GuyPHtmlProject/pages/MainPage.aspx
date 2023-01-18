@@ -128,6 +128,9 @@ input[type="checkbox"]{
   font-size: 35px;
   font-weight: 600;
 }
+.black {
+    color: black;
+}
 
    </style>
       <title></title>
@@ -147,7 +150,7 @@ input[type="checkbox"]{
       <div class="wrapper">
          <ul>
             <li><a href="MainPage.aspx">Hogwarts</a></li>
-            <li><a href="ALLBooks.aspx">Books</a></li>
+            <li><a href="Books.aspx">Books</a></li>
             <li><a href="Movies.aspx">Movies</a></li>
             <li><a href="signup.aspx">Sign Up</a></li>
          </ul>
@@ -159,7 +162,7 @@ input[type="checkbox"]{
          <p>
             Hogwarts
          </p>
-      </div>
+z      </div>
    </body>
 </html>
 

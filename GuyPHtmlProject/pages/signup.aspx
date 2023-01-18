@@ -9,6 +9,57 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+html,
+body {
+  height: 100%;
+  font-family: "Lato";
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-size: 1.2rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+label{
+  user-select: none;
+}
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  z-index: 10;
+  margin: 0 10px 10px 0;
+  position: relative;
+  color: #ced4da;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #ced4da;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+input[type="radio"]:checked + label {
+  color: #00FFFF;
+  background-color: #40D61A;
+}
+
+input[type="radio"] + label {
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
   margin: 0;
@@ -177,6 +228,12 @@ form input[type="submit"]:hover{
     font-weight: bold;
     color: #5372F0;
 }
+btn_block {
+
+}
+div.a {
+  font-size: 15px;
+}
 </style>
 </asp:Content>
 
@@ -200,13 +257,31 @@ form input[type="submit"]:hover{
           <i class="icon fas fa-lock"></i>
         </div>
       </div>
-      <div class="pass-txt"><a href="#">שכחת סיסמה?</a></div>
+      <div class="pass-txt"><a href="#"><font style="font-size: 20px"> ?שכחת סיסמא </font></a></div>
+        <br />
+          <h3>
+                          
+                            </h3>
+                        <div class="container">
+                            <input type='radio' id='male'  name='radio'>
+                            <label for='male'>גבר&#128081;</label>
+                            <input type='radio' id='female' name='radio'>
+                            <label for='female'>אישה&#129326;</label>
+                        </div>
+                
+      
       <input type="submit"  name="submit" value="הירשמות">
+
+        
+                
         
     </form>
       
+      
   <%= st %>
     </div>
+        
+            
 
 
 </body>
