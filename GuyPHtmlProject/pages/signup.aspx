@@ -39,7 +39,7 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   z-index: 10;
-  margin: 0 10px 10px 0;
+  margin: 0 5px 5px 0;
   position: relative;
   color: #ced4da;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -51,12 +51,12 @@ input[type="radio"] + label {
 }
 
 input[type="radio"]:checked + label {
-  color: #00FFFF;
-  background-color: #40D61A;
+  color:#FFFF;
+  background-color: #5372F0;
 }
 
 input[type="radio"] + label {
-  padding: 5px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
 }
 
@@ -263,10 +263,10 @@ div.a {
                           
                             </h3>
                         <div class="container">
-                            <input type='radio' id='male'  name='radio'>
-                            <label for='male'>גבר&#128081;</label>
-                            <input type='radio' id='female' name='radio'>
-                            <label for='female'>אישה&#129326;</label>
+                            <input type='radio' id='male'  name='gender'>
+                            <label for='male'>&#128081גבר</label>
+                            <input type='radio' id='female' name='gender'>
+                            <label for='female'>&#9749;אישה</label>
                         </div>
                 
       

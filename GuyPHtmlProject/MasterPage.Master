@@ -1,7 +1,7 @@
 ﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="GuyPHtmlProject.MasterPage" %>
 
 
-
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <asp:ContentPlaceHolder ID="head" runat="server">
     
 <head>
@@ -135,14 +135,12 @@ input[type="checkbox"]{
     <title>asd</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 </head>
-
-
     </asp:ContentPlaceHolder>
 
-
-
 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Body Place Holder ~~~~~~~~~~~~~~~~~~~ -->
 
     
 
@@ -167,6 +165,7 @@ input[type="checkbox"]{
             <label for="about" class="about"><a href="#"><i class="far fa-user"></i>About</a></label>
             <div class="tab"></div>
          </nav>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       </div>
    </body>
 </html>
