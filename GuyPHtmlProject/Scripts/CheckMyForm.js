@@ -4,8 +4,39 @@
     //alert("uName = " + uName);
     if (!userNameOK(uName))
         return false;
-}
 
+    var hobies = document.getElementByName("hobies");
+    var hobChecked = false;
+    // מעבר על המערך וחיפוש האפשרות שנבחרה
+    for (var i = 0; i < hobies.length; i++)
+        if (hobies[i].checked)
+            hobChecked = true
+    // הצגת הודעות שגיאה אם לא נבחרה אפשרות אחת לפחות
+    if (hobChecked == false)
+    {
+        document.getElementById("mHobies").value = "תחביב נבחר לא;"
+    document.getElementById("mHobies").style.display = "inline"
+    return false;
+    }
+    else
+        document.getElementById("mHobies").style.display = "none"
+
+
+}
+function isBadChars(str) {
+    var badChr = "$%^&*()-! []{}<>?"
+    var len = badChr.length
+
+    var i = 0, pos, ch;
+    while (i < len) {
+        ch = badChr.charAt(i);
+        pos = str.indexOf(ch);
+        if (pos != -1)
+            return true;
+        i++;
+        return false;
+    }
+}
 function userNameOK(name) {
     var msg = "";
 
@@ -15,7 +46,9 @@ function userNameOK(name) {
         msg = "שם משתמש יהיה בין 6-30 תווים";
     else if (isHebrew(name))
         msg = "שם משתמש אינו יכול להכיל תווים בעברית";
-
+    else if isBadChars(str){
+        msg = "שם משתמש יכול להכיל אותיות באנגלית ו/או ספרות בלבד"
+    }
     if (msg != "") {
         document.getElementById("mUName").value = msg;
         document.getElementById("mUName").style.display = "inline";
