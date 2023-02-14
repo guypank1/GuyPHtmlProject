@@ -123,6 +123,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="images\harrypoter-pattern.jpg" />
     <Content Include="images\harrypoter-pattern.png" />
+    <Content Include="Login.aspx" />
     <Content Include="pages\Books.aspx" />
     <Content Include="pages\MainPage.aspx" />
     <Content Include="pages\Movies.aspx" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

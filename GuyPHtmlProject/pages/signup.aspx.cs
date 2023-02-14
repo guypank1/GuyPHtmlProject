@@ -29,14 +29,13 @@ namespace GuyPHtmlProject.pages
                 //--- שליפת המידע שהגיע מהטופס לתוך משתנים ---
                 string email = Request.Form["email"];
                 string password = Request.Form["password"];
-
-                string gender = "הליקופטר מלחמה";
+                string gender = "bruh";
 
                 if (Request.Form["gender"] == "male")
                     gender = "גבר";
                 else if (Request.Form["gender"] == "female")
                     gender = "אישה מגעילה";
-
+                Console.WriteLine(Request.Form["gender"]);
                 st += $"<table class=\"styled-table\"> ";
                 st += "<thead>";
                 st += "<tr>";
