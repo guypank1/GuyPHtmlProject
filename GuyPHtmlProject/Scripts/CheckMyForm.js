@@ -46,7 +46,8 @@ function userNameOK(name) {
         msg = "שם משתמש יהיה בין 6-30 תווים";
     else if (isHebrew(name))
         msg = "שם משתמש אינו יכול להכיל תווים בעברית";
-    else if isBadChars(str){
+    else if isBadChars(str)
+    {
         msg = "שם משתמש יכול להכיל אותיות באנגלית ו/או ספרות בלבד"
     }
     if (msg != "") {

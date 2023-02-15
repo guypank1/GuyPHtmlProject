@@ -18,7 +18,7 @@ using Microsoft.Win32;
 /// </summary>
 /// 
 
-namespace GuysASPNetExample
+namespace GuyPHtmlProject
 {
     public class Helper
     {
