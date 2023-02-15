@@ -67,8 +67,12 @@
         </tr>
 
         <tr>
-            <th>שנת לידה</th>
-            <th>COMBO</th>
+            <td>שנת לידה</td>
+            <td>
+                <select name ="yearBorn">
+                    <%--<%yrborn %>--%>
+                    </select>
+            </td>
             <th></th>
         </tr>
         <tr>
@@ -77,14 +81,39 @@
             <th></th>
         </tr>
         <tr>
-            <th>טלפון</th>
-            <th>COMBO+Textbox+RedLabel</th>
-            <th></th>
+            <td>מס' טלפון</td>
+            <td dir ="ltr">
+                <select name ="prefix" id="prefix">
+                    <option value="choose">בחרו</option>
+                    <option value ="050">050</option>
+                    <option value ="052">052</option>
+                    <option value ="053">053</option>
+                    <option value ="054">054</option>
+                    <option value ="055">055</option>
+                    <option value ="057">057</option>
+                    <option value ="058">058</option>
+                    <option value ="02">02</option>
+                    <option value ="03">03</option>
+                    <option value ="04">04</option>
+                    <option value ="08">08</option>
+                    <option value ="09">09</option>
+                    <option value ="077">077</option>
+                </select>
+
+                &nbsp;&nbsp; - &nbsp;&nbsp;
+
+                <input type="text" name="phoneNum" id="phoneNum" />
+            </td>
+            <td>
+                <input type ="text" id="mPhone" size="30"
+                    style="display: none; background-color: silver; font-weight:bold;"
+                    disabled="disabled" />
+            </td>
         </tr>
         <tr>
             <td>תחביבים</td>
                         <td>
-                            <input type="checkbox" name="hobies" value="football" />כדורגל&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="hobies" value="football" />כדורגל&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="tennis" />טניס&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="compGame" />משחקי מחשב&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="dancing" />ריקוד&nbsp;&nbsp;&nbsp;
