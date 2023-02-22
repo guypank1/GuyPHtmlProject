@@ -69,11 +69,13 @@
         <tr>
             <td>שנת לידה</td>
             <td>
-                <select name ="yearBorn">
-                    <%--<%yrborn %>--%>
-                    </select>
+               <input type ="text" id="yearBorn" name ="yearBorn"/>
             </td>
-            <th></th>
+            <td>
+                <input type="text" id="mYearBorn" size="40"
+                    style ="display: none; background-color: silver; font-weight: bold;"
+                    disabled ="disabled"
+            </td>
         </tr>
         <tr>
             <th>ישוב מגורים</th>

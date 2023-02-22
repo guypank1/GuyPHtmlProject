@@ -39,9 +39,9 @@ namespace GuyPHtmlProject
                 st += $"<tr><td>email:</td><td>{email}</td></tr>";
                 st += $"<tr><td>hobies:</td><td>{hobies}</td></tr>";
                 if (gender == "male")
-                    st += $"<tr><td colspan = '2' >{uName} הוא בן </td></tr>";
-                else
                     st += $"<tr><td colspan = '2' >{uName} היא בת </td></tr>";
+                else
+                    st += $"<tr><td colspan = '2' >{uName} הוא בן </td></tr>";
                 st += "</table>";
 
 
