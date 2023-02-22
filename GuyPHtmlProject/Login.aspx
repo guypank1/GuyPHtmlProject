@@ -128,9 +128,9 @@
             </td>
         </tr>
         <tr>
-            <th>סיסמה</th>
-            <th>INPUT+red label</th>
-            <th>OUTPUT</th>
+            <td>סיסמה</td>
+            <td>INPUT+red label</td>
+            <td>OUTPUT</td>
         </tr>
         <tr>
             <th>בדיקת סיסמה</th>

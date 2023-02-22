@@ -96,3 +96,20 @@
         return false;
     }
 
+    // בדיקת שנת לידה
+    var isBorn = document.getElementById("yearBorn").value;
+    var msg = "";
+    if (isNaN(yearBorn))
+        msg = "שנת לידה חייבת להכיל ספרות בלבד";
+    else
+        if (yearBorn > 1900)
+            msg = "שנת לידה חייבת להיות מספר 4 ספרתי גדול מ-1900";
+    if (msg != "") {
+        document.getElementById("mYearBorn").value = msg;
+        document.getElementById("mYearBorn").style.display = "inline";
+        msg = "";
+        return false;
+    }
+    else
+        document.getElementById("mYearBorn").style.display = "none";
+}
