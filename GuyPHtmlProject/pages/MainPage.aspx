@@ -143,12 +143,18 @@
         .black {
             color: black;
         }
+        .right {
+            float: right;
+            width: 33.33%;
+            padding: 5px;
+            margin-top: 80px;
+        }
     </style>
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-
+    <img  class="right" src ="https://i.ibb.co/Wx8xLpT/harry-flozter-1.png" />
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -163,12 +169,12 @@
                 <li><a href="MainPage.aspx">Hogwarts</a></li>
                 <li><a href="Books.aspx">Books</a></li>
                 <li><a href="Movies.aspx">Movies</a></li>
-                <li><a href="Login.aspx">Sign Up</a></li>
+                <li><a href="..//Login.aspx">Sign Up</a></li>
             </ul>
         </div>
         <div class="content">
             <div class="title">
-                ..ברוכים הבאים אל
+                ...ברוכים הבאים אל
             </div>
             <p>
                 &#9889;הוגוורטס&#9889;
