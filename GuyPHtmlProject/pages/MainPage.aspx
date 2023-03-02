@@ -153,7 +153,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+    <%--picture--%>
     <img  class="right" src ="https://i.ibb.co/Wx8xLpT/harry-flozter-1.png" />
 
 </asp:Content>
