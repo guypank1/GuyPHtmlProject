@@ -3,14 +3,28 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         table {
-            border: 1px solid red;
+            border: 1px;
             margin: auto;
-            border-collapse: collapse
+            border-collapse: collapse;
+            width: 750px;
+            height: auto;
+            
         }
 
         td, th {
             border: 1px solid navy;
+            padding: 20px;
         }
+
+        body {
+            background-image: url('https://images5.alphacoders.com/129/1299476.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+                    color: whitesmoke;
+
+        }
+
     </style>
     <script src="Scripts/CheckMyForm.js"></script>
 </asp:Content>
@@ -77,11 +91,30 @@
                     disabled ="disabled"
             </td>
         </tr>
-        <tr>
-            <th>ישוב מגורים</th>
-            <th>COMBO</th>
-            <th></th>
-        </tr>
+        <tr>
+                <td>ישוב מגורים</td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="other" selected>בחר ישוב מגורים</option>
+                        <option value="חיפה">חיפה</option>
+                        <option value="תל-אביב">תל-אביב</option>
+                        <option value="ירושלים">ירושלים</option>
+<option value="מודיעין">מודיעין</option>
+                        <option value="באר-שבע">באר-שבע</option>
+                        <option value="מטולה">מטולה</option>
+                        <option value="הרצליה">הרצליה</option>
+                        <option value="צפון">צפון</option>
+                        <option value="מרכז">מרכז</option>
+                        <option value="דרום">דרום</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="mCity" size="50"
+                        style="display: none; background-color: silver; font-weight: bold;"
+                        disabled="disabled" />
+                </td>
+            </tr>
+
         <tr>
             <td>מס' טלפון</td>
             <td dir ="ltr">
@@ -112,31 +145,47 @@
                     disabled="disabled" />
             </td>
         </tr>
+                  <tr>
+                <td>תחביבים</td>
+                <td>
+                    <input type="checkbox" name="hobies" value="1" />כדורגל&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="hobies" value="2" />טניס&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="hobies" value="3" />משחקי מחשב&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="hobies" value="4" />ריקוד&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="hobies" value="5" />אחר&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <input type="text" id="mHobies" size="30"
+                        style="display: none; background-color: silver; font-weight: bold;"
+                        disabled="disabled" />
+                </td>
+            </tr>
+         <tr>
+                <td>סיסמא</td>
+                <td>
+                    <input type="password" name="pw" id="pw" size="10"
+                        maxlength="10"/>
+                    <span style="color: red;">*6-10 תווים</span>
+                </td>
+                <td>
+                    <input type="text" id="mPw" size="30"
+                        style="display: none; background-color: silver; color: red; font-weight: bold;"
+                        disabled="disabled" />
+                </td>
+            </tr>
         <tr>
-            <td>תחביבים</td>
-                        <td>
-                    <input type="checkbox" name="hobies" value="football" />כדורגל&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="hobies" value="tennis" />טניס&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="hobies" value="compGame" />משחקי מחשב&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="hobies" value="dancing" />ריקוד&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="hobies" value="other" />&nbsp;&nbsp;&nbsp;
-                        </td>
-            <td>
-                <input type="text" id="mHobies" size="30"
-                    style="display: none; background-color: silver; font-weight: bold;"
-                    disabled ="disabled" />
-            </td>
-        </tr>
-        <tr>
-            <td>סיסמה</td>
-            <td>INPUT+red label</td>
-            <td>OUTPUT</td>
-        </tr>
-        <tr>
-            <th>בדיקת סיסמה</th>
-            <th>INPUT</th>
-            <th></th>
-        </tr>
+                <td>בדיקת סיסמא</td>
+                <td>
+                    <input type="password" name="pw1" id="pw1" size="10"
+                        maxlength="10" />
+                </td>
+                <td>
+                    <input type="text" id="mPw1" size="30"
+                        style="display: none; background-color: silver; color: red; font-weight: bold;"
+                        disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
         <tr>
             <td></td>
         </tr>
