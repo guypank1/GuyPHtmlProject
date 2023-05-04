@@ -3,173 +3,186 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <asp:ContentPlaceHolder ID="head" runat="server">
-    
-<head>
-   <style>
-      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
-html {
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
 
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/310/209/217/harry-potter-computer-backgrounds-wallpaper-preview.jpg');
-     /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: top;
-  background-repeat: no-repeat;
-
-}
+            html {
+                background-image: url('https://c4.wallpaperflare.com/wallpaper/310/209/217/harry-potter-computer-backgrounds-wallpaper-preview.jpg');
+                /* Full height */
+                height: 100%;
+                /* Center and scale the image nicely */
+                background-position: top;
+                background-repeat: no-repeat;
+            }
 
 
 
-.wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(-135deg, #0F2027, #203A43, #2C5364);
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-  clip-path: circle(25px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .wrapper{
-  clip-path: circle(75%);
-}
-.menu-btn{
-  position: absolute;
-  z-index: 2;
-  right: 20px;
-  /* left: 20px; */
-  top: 20px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  background: linear-gradient(-135deg, #0F2027, #203A43, #2C5364);
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .menu-btn{
-  background: #fff;
-  color: #4158d0;
-}
-#active:checked ~ .menu-btn i:before{
-  content: "\f00d";
-}
-.wrapper ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-.wrapper ul li{
-  margin: 15px 0;
-}
-.wrapper ul li a{
-  color: none;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
-  color: #fff;
-  position: relative;
-  line-height: 50px;
-  transition: all 1s ease;
-}
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 50px;
-  left: 0;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-}
-.wrapper ul li a:hover{
-  color: #4158d0;
-}
-input[type="checkbox"]{
-  display: none;
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  text-align: center;
-  width: 100%;
-  color: #202020;
-}
-.content .title{
-  font-size: 40px;
-  font-weight: 700;
-}
-.content p{
-  font-size: 35px;
-  font-weight: 600;
-}
+            .wrapper {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(-135deg, #0F2027, #203A43, #2C5364);
+                /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+                /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+                clip-path: circle(25px at calc(100% - 45px) 45px);
+                transition: all 0.3s ease-in-out;
+            }
 
-   </style>
-    <title>asd</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            #active:checked ~ .wrapper {
+                clip-path: circle(75%);
+            }
+
+            .menu-btn {
+                position: absolute;
+                z-index: 2;
+                right: 20px;
+                /* left: 20px; */
+                top: 20px;
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                font-size: 20px;
+                color: #fff;
+                cursor: pointer;
+                background: linear-gradient(-135deg, #0F2027, #203A43, #2C5364);
+                /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+                transition: all 0.3s ease-in-out;
+            }
+
+            #active:checked ~ .menu-btn {
+                background: #fff;
+                color: #4158d0;
+            }
+
+                #active:checked ~ .menu-btn i:before {
+                    content: "\f00d";
+                }
+
+            .wrapper ul {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                list-style: none;
+                text-align: center;
+            }
+
+                .wrapper ul li {
+                    margin: 15px 0;
+                }
+
+                    .wrapper ul li a {
+                        color: none;
+                        text-decoration: none;
+                        font-size: 30px;
+                        font-weight: 500;
+                        padding: 5px 30px;
+                        color: #fff;
+                        position: relative;
+                        line-height: 50px;
+                        transition: all 1s ease;
+                    }
+
+                        .wrapper ul li a:after {
+                            position: absolute;
+                            content: "";
+                            background: #fff;
+                            width: 100%;
+                            height: 50px;
+                            left: 0;
+                            border-radius: 50px;
+                            transform: scaleY(0);
+                            z-index: -1;
+                            transition: transform 0.3s ease;
+                        }
+
+                        .wrapper ul li a:hover:after {
+                            transform: scaleY(1);
+                        }
+
+                        .wrapper ul li a:hover {
+                            color: #4158d0;
+                        }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                text-align: center;
+                width: 100%;
+                color: #202020;
+            }
+
+                .content .title {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .content p {
+                    font-size: 35px;
+                    font-weight: 600;
+                }
+        </style>
+        <title>asd</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-</head>
-    </asp:ContentPlaceHolder>
+    </head>
+</asp:ContentPlaceHolder>
 
 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Body Place Holder ~~~~~~~~~~~~~~~~~~~ -->
 
-    
-
-<html>
-   <head>
-       <title></title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <div class="wrapper">
-         <nav>
-            <input type="radio" name="tab" id="home" checked>
-            <input type="radio" name="tab" id="inbox">
-            <input type="radio" name="tab" id="contact">
-            <input type="radio" name="tab" id="heart">
-            <input type="radio" name="tab" id="about">
-            <label for="home" class="home"><a href="#"><i class="fas fa-home"></i>Home</a></label>
-            <label for="inbox" class="inbox"><a href="#"><i class="far fa-comment"></i>Inbox</a></label>
-            <label for="contact" class="contact"><a href="#"><i class="far fa-envelope"></i>Contact</a></label>
-            <label for="heart" class="heart"><a href="#"><i class="far fa-heart"></i>Heart</a></label>
-            <label for="about" class="about"><a href="#"><i class="far fa-user"></i>About</a></label>
-            <div class="tab"></div>
-         </nav>
-              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      </div>
-   </body>
-</html>
 
 
- </asp:ContentPlaceHolder>
+    <html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <h1 style="font-size: 50">אני הומו!</h1>
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/watch?v=A5yZYZ1tHK0"></iframe>
+        <div class="wrapper">
+            <nav>
+                <input type="radio" name="tab" id="home" checked>
+                <input type="radio" name="tab" id="inbox">
+                <input type="radio" name="tab" id="contact">
+                <input type="radio" name="tab" id="heart">
+                <input type="radio" name="tab" id="about">
+                <label for="home" class="home"><a href="#"><i class="fas fa-home"></i>Home</a></label>
+                <label for="inbox" class="inbox"><a href="#"><i class="far fa-comment"></i>Inbox</a></label>
+                <label for="contact" class="contact"><a href="#"><i class="far fa-envelope"></i>Contact</a></label>
+                <label for="heart" class="heart"><a href="#"><i class="far fa-heart"></i>Heart</a></label>
+                <label for="about" class="about"><a href="#"><i class="far fa-user"></i>About</a></label>
+                <div class="tab"></div>
+            </nav>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        </div>
+    </body>
+    </html>
+
+
+</asp:ContentPlaceHolder>
 
