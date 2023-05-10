@@ -1,79 +1,32 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Movies.aspx.cs" Inherits="GuyPHtmlProject.pages.Movies" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Movies.aspx.cs" Inherits="GuyPHtmlProject.pages.Movies" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        body {
+            background-image: url('https://e0.pxfuel.com/wallpapers/354/491/desktop-wallpaper-movie-theme-movie-themes-cool-moving-theatre.jpg');
+            background-repeat: no-repeat;
+            background-size: 2000px 1000px;
+            color: whitesmoke;
+        }
 
-    <!DOCTYPE html>
+        img {
+            display: block;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+    </style>
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-        <title></title>
-    </head>
-    <body>
-        <form id="form1" runat="server">
-            <div>
-            </div>
-        </form>
-    </body>
-    </html>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .container {
-                position: relative;
-                text-align: center;
-                color: white;
-            }
-
-            .bottom-left {
-                position: absolute;
-                bottom: 8px;
-                left: 16px;
-            }
-
-            .top-left {
-                position: absolute;
-                top: 8px;
-                left: 16px;
-            }
-
-            .top-right {
-                position: absolute;
-                top: 8px;
-                right: 16px;
-            }
-
-            .bottom-right {
-                position: absolute;
-                bottom: 8px;
-                right: 16px;
-            }
-
-            .centered {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            body {
-                background-image: url('https://i.ytimg.com/vi/HsD__RCMOXE/maxresdefault.jpg');
-                background-size: 100%;
-                background-repeat: no-repeat;
-                backgroud position: center top;
-                color: whitesmoke;
-            }
-        </style>
-    </head>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
 
-    <body>
-        <div class="container">
-            <img src="img_snow_wide.jpg" alt="Snow" style="width: 100%;">
-            <div class="centered">Centered</div>
-        </div>
+    <img src="https://i.pinimg.com/originals/97/d0/f7/97d0f7e24d1c13167c4ff59abe52f09e.jpg" alt="Workplace" usemap="#workmap" width="1000" height="500">
 
-    </body>
-</html> 
+    <map name="workmap">
+        <area shape="rect" coords="30,20,230,230" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="260,20,500,230" alt="Phone" href="phone.htm">
+        <area shape="rect" coords=",," alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+</asp:Content>
