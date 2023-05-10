@@ -9,6 +9,7 @@
         background-size:100%;
         background-repeat:no-repeat;
         backgroud position: center top;
+        color: whitesmoke;
     }
     .center {
         display: block;
