@@ -16,16 +16,21 @@ namespace GuyPHtmlProject
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["sessionCounter"] = 0;
+            Application["loginCounter"] = 0;
         }
         void Session_Start(object sender, EventArgs e)
         {
             Session["admin"] = "no";
             Session["uName"] = "אורח";
+            Session["uFName"] = "אורח";
+            Application["sessionCounter"] = (int)Application["sessionCounter"] + 1;
         }
 
         void Session_End(object sender, EventArgs e)
         {
             Session["uName"]="אורח";
+            Session["uFName"] = "אורח";
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿/wl5esmzslkjfoidgvfpjzx﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="GuyPHtmlProject.MasterPage" %>
+﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="GuyPHtmlProject.MasterPage" %>
 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

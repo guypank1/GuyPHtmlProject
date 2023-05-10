@@ -99,7 +99,7 @@
                         <option value="חיפה">חיפה</option>
                         <option value="תל-אביב">תל-אביב</option>
                         <option value="ירושלים">ירושלים</option>
-<option value="מודיעין">מודיעין</option>
+                        <option value="מודיעין">מודיעין</option>
                         <option value="באר-שבע">באר-שבע</option>
                         <option value="מטולה">מטולה</option>
                         <option value="הרצליה">הרצליה</option>
@@ -189,15 +189,22 @@
         <tr>
             <td></td>
         </tr>
-        <tr>
-            <td><br /></td>
-            <td colspan="2" style="text-align: center;">
-                <input type="submit" name="submit" value="   שלח   " />
-                <input type="reset" />
+        <tr style="border:none">
+            <td colspan="3" class="mpTd" style="text-align: center;">
+                <button type ="submit" name="submit" class="btn btn-outline-primary">שלח</button>
+                <button type="reset" class="btn btn-outline-warning">אפס</button>
             </td>
+            <td><br /></td>
         </tr>
     </table>
         </form>
     <br />
-    <%= st %>
+
+    <h3 style="direction: ltr"><%= sqlMsg %></h3>
+
+    <table style="margin: 0 auto; direction: ltr; border="1">
+        <%=st %>
+    </table>
+
+    <%= msg %>
 </asp:Content>

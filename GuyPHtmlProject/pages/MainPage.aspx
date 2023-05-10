@@ -162,9 +162,6 @@
     <!DOCTYPE html>
     <html>
     <body>
-        <h1 style="font-size: 50">אני הומו!</h1>
-        <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=A5yZYZ1tHK0?autoplay=1"></iframe>
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
@@ -183,9 +180,6 @@
                 &#9889;הוגוורטס&#9889;
             </p>
         </div>
-        <h1 style="font-size: 50">אני הומו!</h1>
-        <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=A5yZYZ1tHK0?autoplay=1"></iframe>
     </body>
     </html>
 
