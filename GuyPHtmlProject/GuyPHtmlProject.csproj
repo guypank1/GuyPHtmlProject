@@ -134,10 +134,10 @@
     <Content Include="MovieSeasons\SeventhMovie.aspx" />
     <Content Include="MovieSeasons\SixthMovie.aspx" />
     <Content Include="MovieSeasons\ThirdMovie.aspx" />
-    <Content Include="pages\Movies.aspx" />
+    <Content Include="Movies.aspx" />
     <Content Include="Signup.aspx" />
-    <Content Include="pages\Books.aspx" />
-    <Content Include="pages\MainPage.aspx" />
+    <Content Include="Books.aspx" />
+    <Content Include="MainPage.aspx" />
     <Content Include="Scripts\CheckMyForm.js" />
     <Content Include="images\il_1080xN.2552674576_sbzt.webp" />
     <Content Include="MasterPage.Master" />
@@ -210,12 +210,6 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs" />
-    <Compile Include="Global.asax.cs.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Global.asax.cs.designer.cs">
-      <DependentUpon>Global.asax.cs.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginAdmin.aspx.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -293,11 +287,11 @@
     <Compile Include="MovieSeasons\ThirdMovie.aspx.designer.cs">
       <DependentUpon>ThirdMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Movies.aspx.cs">
+    <Compile Include="Movies.aspx.cs">
       <DependentUpon>Movies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Movies.aspx.designer.cs">
+    <Compile Include="Movies.aspx.designer.cs">
       <DependentUpon>Movies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Signup.aspx.cs">
@@ -314,18 +308,18 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="pages\Books.aspx.cs">
+    <Compile Include="Books.aspx.cs">
       <DependentUpon>Books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Books.aspx.designer.cs">
+    <Compile Include="Books.aspx.designer.cs">
       <DependentUpon>Books.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\MainPage.aspx.cs">
+    <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\MainPage.aspx.designer.cs">
+    <Compile Include="MainPage.aspx.designer.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
