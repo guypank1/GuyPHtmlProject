@@ -113,7 +113,6 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -127,6 +126,14 @@
     <Content Include="LoginAdmin.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
+    <Content Include="MovieSeasons\EighthMovie.aspx" />
+    <Content Include="MovieSeasons\FifthMovie.aspx" />
+    <Content Include="MovieSeasons\FirstMovie.aspx" />
+    <Content Include="MovieSeasons\FourthMovie.aspx" />
+    <Content Include="MovieSeasons\SecondMovie.aspx" />
+    <Content Include="MovieSeasons\SeventhMovie.aspx" />
+    <Content Include="MovieSeasons\SixthMovie.aspx" />
+    <Content Include="MovieSeasons\ThirdMovie.aspx" />
     <Content Include="pages\Movies.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="pages\Books.aspx" />
@@ -202,8 +209,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Global.asax.cs" />
+    <Compile Include="Global.asax.cs.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs.designer.cs">
+      <DependentUpon>Global.asax.cs.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginAdmin.aspx.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
@@ -225,6 +236,62 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\EighthMovie.aspx.cs">
+      <DependentUpon>EighthMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\EighthMovie.aspx.designer.cs">
+      <DependentUpon>EighthMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\FifthMovie.aspx.cs">
+      <DependentUpon>FifthMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\FifthMovie.aspx.designer.cs">
+      <DependentUpon>FifthMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\FirstMovie.aspx.cs">
+      <DependentUpon>FirstMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\FirstMovie.aspx.designer.cs">
+      <DependentUpon>FirstMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\FourthMovie.aspx.cs">
+      <DependentUpon>FourthMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\FourthMovie.aspx.designer.cs">
+      <DependentUpon>FourthMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\SecondMovie.aspx.cs">
+      <DependentUpon>SecondMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\SecondMovie.aspx.designer.cs">
+      <DependentUpon>SecondMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\SeventhMovie.aspx.cs">
+      <DependentUpon>SeventhMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\SeventhMovie.aspx.designer.cs">
+      <DependentUpon>SeventhMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\SixthMovie.aspx.cs">
+      <DependentUpon>SixthMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\SixthMovie.aspx.designer.cs">
+      <DependentUpon>SixthMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeasons\ThirdMovie.aspx.cs">
+      <DependentUpon>ThirdMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieSeasons\ThirdMovie.aspx.designer.cs">
+      <DependentUpon>ThirdMovie.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Movies.aspx.cs">
       <DependentUpon>Movies.aspx</DependentUpon>

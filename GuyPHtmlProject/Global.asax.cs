@@ -29,7 +29,7 @@ namespace GuyPHtmlProject
 
         void Session_End(object sender, EventArgs e)
         {
-            Session["uName"]="אורח";
+            Session["uName"] = "אורח";
             Session["uFName"] = "אורח";
         }
     }
