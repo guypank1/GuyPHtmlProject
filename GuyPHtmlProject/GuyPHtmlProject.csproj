@@ -104,6 +104,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminPage.aspx" />
+    <Content Include="App_Data\usersDB.ldf">
+      <DependentUpon>usersDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\usersDB.mdf" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -121,6 +125,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Global.asax" />
     <Content Include="images\harrypoter-pattern.jpg" />
     <Content Include="images\harrypoter-pattern.png" />
     <Content Include="LoginAdmin.aspx" />
@@ -135,6 +140,8 @@
     <Content Include="MovieSeasons\SixthMovie.aspx" />
     <Content Include="MovieSeasons\ThirdMovie.aspx" />
     <Content Include="Movies.aspx" />
+    <Content Include="SelectByName.aspx" />
+    <Content Include="SelectGmailAndYears.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Books.aspx" />
     <Content Include="MainPage.aspx" />
@@ -209,7 +216,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="LoginAdmin.aspx.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,6 +303,20 @@
     <Compile Include="Movies.aspx.designer.cs">
       <DependentUpon>Movies.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SelectByName.aspx.cs">
+      <DependentUpon>SelectByName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectByName.aspx.designer.cs">
+      <DependentUpon>SelectByName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectGmailAndYears.aspx.cs">
+      <DependentUpon>SelectGmailAndYears.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectGmailAndYears.aspx.designer.cs">
+      <DependentUpon>SelectGmailAndYears.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -353,7 +376,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>

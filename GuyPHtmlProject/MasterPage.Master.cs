@@ -9,28 +9,34 @@ namespace GuyPHtmlProject
 {
     public partial class MasterPage : System.Web.UI.MasterPage
     {
-        public string loginMsg;
+        public string loginMsg="";
         protected void Page_Load(object sender, EventArgs e)
         {
-            //---מחרוזת כניסה למשתמש
-                loginMsg += $"<h3>שלום {Session["uFName"].ToString()} </h3>";
-            //---בניית התפריט האישי לאורח/משתמש/מנהל---
+            //--- מחרוזת כניסה למשתמש
+            loginMsg += $"<h3>שלום {Session["uFName"].ToString()} </h3>";
+            //--- בניית התפריט האישי לאורח/משתמש/מנהל ---
             if (Session["admin"].ToString() == "yes")
             {
-                loginMsg += "<a herf='ShowTable.aspx'>הצגת טבלה</a><br />";
-                loginMsg += "<a herf='Logout.aspx'>התנתק</a><br />";
-
+                loginMsg += "<a href='Logout.aspx' class='btn btn-outline-primary btn-sm btn-side p-0'>התנתק</a><br />";
+                loginMsg += "<a href='DeleteUser.aspx' class='btn btn-outline-warning btn-sm btn-side p-0'>מחיקת משתמש</a><br />";
+                loginMsg += "<a href='ComplexQuery.aspx' class='btn btn-outline-primary btn-sm btn-side p-0'>שאילתה דינאמית מורכבת</a><br />";
+                loginMsg += "<a href='ShowTable.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת טבלה</a><br />";
+                loginMsg += "<a href='AdminPage.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>ניהול</a><br />";
+                loginMsg += "<a href='SelectByName.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת משתמשים בשם א<a><br /><!--Page by Guy pank-->";
+                loginMsg += "<a href='SelectGmailAndYears.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>משתמשי ג'ימייל</a><br />"; //by Guy pank
             }
             else if (Session["uName"].ToString() == "אורח")
             {
-                loginMsg += "<a herf='SignUp.aspx'>רישום</a><br />";
-                loginMsg += "<a herf='Logoin.aspx'>התחבר</a><br />";
+                loginMsg += "<a href='Login.aspx' class='btn btn-outline-primary btn-lg btn-side'>התחבר</a><br />";
+                loginMsg += "<a href='Signup.aspx' class='btn btn-outline-secondary btn-lg btn-side'>רישום</a><br />";
             }
-            else
+            else  // authenticated user
             {
-                loginMsg += "<a herf='Logout.aspx'>התנתק</a><br />";
-            }
+                loginMsg += "<a href='Logout.aspx' class='btn btn-outline-primary btn-sm btn-side'>התנתק</a><br />";
+                loginMsg += "<a href='UpdateUser.aspx'  class='btn btn-outline-secondary btn-sm btn-side'>עדכון פרטים</a><br />";
+                loginMsg += "<a href='LoginAdmin.aspx' class='btn btn-outline-secondary btn-sm btn-side'>התחברות מנהל</a><br />";
 
+            }
         }
     }
 }
