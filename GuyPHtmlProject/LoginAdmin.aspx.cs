@@ -20,7 +20,7 @@ namespace GuyPHtmlProject
                 string msg = "";
                 string mName = Request.Form["mName"];
                 string mPw = Request.Form["mPw"];
-                sqlLogin = $"select * from {tableName} where mName = '{mName}' and mPw = '{mPw}'";
+                sqlLogin = $"select * from {tableName} where mName = 'N{mName}' and mPw = '{mPw}'";
                 DataTable table = Helper.ExecuteDataTable(sqlLogin);
                 int length = table.Rows.Count;
                 if (length == 0)

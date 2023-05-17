@@ -140,6 +140,7 @@
     <Content Include="MovieSeasons\SixthMovie.aspx" />
     <Content Include="MovieSeasons\ThirdMovie.aspx" />
     <Content Include="Movies.aspx" />
+    <Content Include="ComplexQuery.aspx" />
     <Content Include="SelectByName.aspx" />
     <Content Include="SelectGmailAndYears.aspx" />
     <Content Include="Signup.aspx" />
@@ -302,6 +303,13 @@
     </Compile>
     <Compile Include="Movies.aspx.designer.cs">
       <DependentUpon>Movies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplexQuery.aspx.cs">
+      <DependentUpon>ComplexQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplexQuery.aspx.designer.cs">
+      <DependentUpon>ComplexQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="SelectByName.aspx.cs">
       <DependentUpon>SelectByName.aspx</DependentUpon>
