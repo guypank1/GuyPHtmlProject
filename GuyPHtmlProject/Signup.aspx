@@ -75,7 +75,7 @@
             <th>מין</th>
             <td>
                 <input type="radio" name="gender" value="male" /> זכר
-                <input type="radio" name="gender" value="female" checked/> נקבה
+                <input type="radio" name="gender" value="female"/> נקבה
             </td>
             <td></td>
         </tr>

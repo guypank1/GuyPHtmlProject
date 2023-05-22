@@ -141,6 +141,7 @@
     <Content Include="MovieSeasons\ThirdMovie.aspx" />
     <Content Include="Movies.aspx" />
     <Content Include="ComplexQuery.aspx" />
+    <Content Include="PhotoGallery.aspx" />
     <Content Include="SelectByName.aspx" />
     <Content Include="SelectGmailAndYears.aspx" />
     <Content Include="Signup.aspx" />
@@ -310,6 +311,13 @@
     </Compile>
     <Compile Include="ComplexQuery.aspx.designer.cs">
       <DependentUpon>ComplexQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoGallery.aspx.cs">
+      <DependentUpon>PhotoGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoGallery.aspx.designer.cs">
+      <DependentUpon>PhotoGallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="SelectByName.aspx.cs">
       <DependentUpon>SelectByName.aspx</DependentUpon>
