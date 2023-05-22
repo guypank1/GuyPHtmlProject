@@ -1,10 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="PhotoGallery.aspx.cs" Inherits="GuyPHtmlProject.PhotoGallery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3766.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+                    color: whitesmoke;
+
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <style>
+<head>
+    <TITLE>גלרייה בטבלה </TITLE>
+        <script language="javascript">
+            function picShow(pic)
+            {
+                bigPic.src = pic;
+            }
+        </script>
+</head>
+    <style>
         .imgCell {
             width: 200px;
             height: 160px;
