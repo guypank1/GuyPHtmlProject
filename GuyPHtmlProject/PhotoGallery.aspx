@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         body {
-            background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3766.jpg');
+            background-image: url('https://i.ytimg.com/vi/HsD__RCMOXE/maxresdefault.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -15,8 +15,7 @@
 <head>
     <TITLE>גלרייה בטבלה </TITLE>
         <script language="javascript">
-            function picShow(pic)
-            {
+            function picShow(pic) {
                 bigPic.src = pic;
             }
         </script>
@@ -34,6 +33,10 @@
             border: 1px solid gray;
         }
     </style>
+            <h1 style="font-size: 100%">
+            <h1 style="text-align: center"
+            <b>גלריית תמונות</b></h1>
+
     <table style="margin: 0px auto;">
         <tr>
             <td>

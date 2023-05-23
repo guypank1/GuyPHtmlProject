@@ -1,8 +1,33 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body {
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.caroTTTusel-caption {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.carousel {
+    max-width: 60rem;
+    margin: auto;
+}
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */

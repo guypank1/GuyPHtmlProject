@@ -142,10 +142,10 @@
     <Content Include="Movies.aspx" />
     <Content Include="ComplexQuery.aspx" />
     <Content Include="PhotoGallery.aspx" />
+    <Content Include="Scripts\detectFields.js" />
     <Content Include="SelectByName.aspx" />
     <Content Include="SelectGmailAndYears.aspx" />
     <Content Include="Signup.aspx" />
-    <Content Include="Books.aspx" />
     <Content Include="MainPage.aspx" />
     <Content Include="Scripts\CheckMyForm.js" />
     <Content Include="images\il_1080xN.2552674576_sbzt.webp" />
@@ -346,13 +346,6 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Books.aspx.cs">
-      <DependentUpon>Books.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Books.aspx.designer.cs">
-      <DependentUpon>Books.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>

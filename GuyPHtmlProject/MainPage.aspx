@@ -167,8 +167,8 @@
         <div class="wrapper">
             <ul>
                 <li><a href="MainPage.aspx">Hogwarts</a></li>
-                <li><a href="Books.aspx">Books</a></li>
                 <li><a href="Movies.aspx">Movies</a></li>
+                <li><a href="PhotoGallery.aspx">PhotoGallery</a></li>
                 <li><a href="..//Signup.aspx">Sign Up</a></li>
             </ul>
         </div>
