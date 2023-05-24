@@ -9,34 +9,56 @@ namespace GuyPHtmlProject
 {
     public partial class MasterPage : System.Web.UI.MasterPage
     {
-        public string loginMsg="";
+        public string loginMsg;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //--- מחרוזת כניסה למשתמש
-            loginMsg += $"<h3>שלום {Session["uFName"].ToString()} </h3>";
-            //--- בניית התפריט האישי לאורח/משתמש/מנהל ---
+            // מחרוזת כניסה
+
+            // בניית התפריט למנהל או אורח
             if (Session["admin"].ToString() == "yes")
             {
-                loginMsg += "<a href='Logout.aspx' class='btn btn-outline-primary btn-sm btn-side p-0'>התנתק</a><br />";
-                loginMsg += "<a href='DeleteUser.aspx' class='btn btn-outline-warning btn-sm btn-side p-0'>מחיקת משתמש</a><br />";
-                loginMsg += "<a href='ComplexQuery.aspx' class='btn btn-outline-primary btn-sm btn-side p-0'>שאילתה דינאמית מורכבת</a><br />";
-                loginMsg += "<a href='ShowTable.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת טבלה</a><br />";
-                loginMsg += "<a href='AdminPage.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>ניהול</a><br />";
-                loginMsg += "<a href='SelectByName.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת משתמשים בשם א<a><br /><!--Page by Guy pank-->";
-                loginMsg += "<a href='SelectGmailAndYears.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>משתמשי ג'ימייל</a><br />"; //by Guy pank
+                loginMsg += $"שלום מנהל";
+                loginMsg += $"<li><a href = 'MainPage.aspx' > עמוד ראשי</a></li>";
+                loginMsg += $"<li><a href ='Movies.aspx'> סרטים </a></li>";
+                loginMsg += $"<li><a href = 'PhotoGallery.aspx' > גלריית תמונות</a></li>";
+                loginMsg += "<li><a href=\"Calculator.aspx\">מחשבון</a></li>";
+                loginMsg += "<li><a href=\"#services\">Market</a></li>";
+                loginMsg += "<li><a href=\"#about\">Wallet</a></li>";
+                loginMsg += "<li>";
+                loginMsg += "<a href='#'>";
+                loginMsg += "מנהל";
+                loginMsg += "<i class=\"fas fa-caret-down\"></i>";
+                loginMsg += "</a>";
+                loginMsg += "<ul class='dropdown-menu'>";
+                loginMsg += "<li><a href='ShowTable.aspx'>הצגת טבלה</a></li>";
+                loginMsg += "<li><a href='ComplexQuery.aspx'>שאילתה דינמית</a></li>";
+                loginMsg += "<li><a href='DeleteUser.aspx'>מחיקת משתמשים</a></li>";
+                loginMsg += "<li><a href='SelectGmailAndYears.aspx'>טבלת אימיילים</a></li>";
+                loginMsg += "<li><a href='Schedule.aspx'>טבלת שעות</a></li>";
+                loginMsg += "</ul>";
+                loginMsg += "</li>";
+                loginMsg += "<li><a href='Logout.aspx'>התנתק</a></li>";
             }
             else if (Session["uName"].ToString() == "אורח")
             {
-                loginMsg += "<a href='Login.aspx' class='btn btn-outline-primary btn-lg btn-side'>התחבר</a><br />";
-                loginMsg += "<a href='Signup.aspx' class='btn btn-outline-secondary btn-lg btn-side'>רישום</a><br />";
+                loginMsg += $"שלום {Session["uFname"].ToString()}";
+                loginMsg += $"<li><a href = 'MainPage.aspx' > עמוד ראשי</a></li>";
+                loginMsg += "<li><a href='Signup.aspx'>רישום</a></li>";
+                loginMsg += "<li><a href='Login.aspx'>התחבר</a></li>";
+                loginMsg += $"<li><a href ='Movies.aspx'> סרטים </a></li>";
+                loginMsg += $"<li><a href = 'PhotoGallery.aspx' > גלריית תמונות</a></li>";
+                loginMsg += "<li><a href='adminLogin.aspx'>דף מנהל</a></li>";
             }
-            else  // authenticated user
+            else
             {
-                loginMsg += "<a href='Logout.aspx' class='btn btn-outline-primary btn-sm btn-side'>התנתק</a><br />";
-                loginMsg += "<a href='UpdateUser.aspx'  class='btn btn-outline-secondary btn-sm btn-side'>עדכון פרטים</a><br />";
-                loginMsg += "<a href='LoginAdmin.aspx' class='btn btn-outline-secondary btn-sm btn-side'>התחברות מנהל</a><br />";
-
+                loginMsg += "<li><a href=\"Calculator.aspx\">מחשבון</a></li>";
+                loginMsg += "<li><a href=\"#services\">Market</a></li>";
+                loginMsg += "<li><a href=\"#about\">Wallet</a></li>";
+                loginMsg += "<li><a href='Logout.aspx'>התנתק</a></li>";
+                loginMsg += $"שלום {Request.Form["uName"]}";
+                loginMsg += $" {Session["fName"].ToString()}";
             }
+
         }
     }
 }

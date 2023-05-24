@@ -3,6 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
         <style>
+        html {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/310/209/217/harry-potter-computer-backgrounds-wallpaper-preview.jpg');
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: top;
+            background-repeat: no-repeat;
+        }
     </style>
         <title>asd</title>
     <link rel="stylesheet" href="style.css">
