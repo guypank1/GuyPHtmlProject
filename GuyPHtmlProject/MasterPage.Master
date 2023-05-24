@@ -168,37 +168,24 @@
 
 </asp:ContentPlaceHolder>
 
-
-
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <img src=" https://i.ibb.co/c1hmGfR/Whats-App-Image-2023-05-24-at-15-14-31-4.jpg" alt="wrUV0.jpg" border="0" />
         <div class="wrapper">
             <ul>
                 <li><a href="MainPage.aspx">Hogwarts</a></li>
                 <li><a href="Movies.aspx">Movies</a></li>
                 <li><a href="PhotoGallery.aspx">PhotoGallery</a></li>
-                <li><a href="..//Signup.aspx">Sign Up</a></li>
+                <li><a href="Signup.aspx">Sign Up</a></li>
             </ul>
         </div>
-        <div class="content">
-            <div class="title">
-                ...ברוכים הבאים אל
-            </div>
-            <p>
-                &#9889;הוגוורטס&#9889;
-            </p>
-        </div>
 
-
-    <table class="mpTable">
-        <tr class="mpTd" style="vertical-align: top">
+    <table class="mpTable">                                                                 
+        <tr class="mpTd" style="vertical-align: top">                           https://ibb.co/kx2dRbz
             <td class="mpTd" rowspan="2" style="width: 20%;">
                 <%=loginMsg %>
             </td>
-            <td class="mpTd" style="width: 70%;">
-                <div id="Top" class="img-responsive" style="height: 240px;">
-                    <img src="pics/LOGO-removebg-preview.png" />
-                </div>
+            <td class="mpTd" style="width: 1px;">
             </td>
             <td class="mpTd" style="width: 10%;"></td>
 
