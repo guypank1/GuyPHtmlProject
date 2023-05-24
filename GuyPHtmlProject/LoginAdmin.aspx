@@ -1,28 +1,28 @@
-﻿<%@ Page Title="משתמש כניסת" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="GuyPHtmlProject.LoginAdmin" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+﻿<%@ Page Title="מנהל כניסת" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="GuyPHtmlProject.LoginAdmin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">  <link rel ="stylesheet" href="Content/style.css" />
+    <head><h1>כניסת מנהל</h1></head>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h1>כניסת משתמש</h1>
-    <form name="loginFrm" id="loginFrm" method="post" runat="server">
-        <br />
-        <br>
-        <table id="tablel" dir="rtl" align="center">
-            <tr>
-                <td>שם משתמש:</td>
-                <td>
-                    <input type="text" name="uName" /></td>
-            </tr>
-            <tr>
-                <td>סיסמא:</td>
-                <td>
-                    <input type="password" name="pw" id="pw" /></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"></td>
-                <td>
-                    <input type="submit" name="submit" value="  התחבר  " />
-                </td>
-            </tr>
-        </table>
-    </form>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" runat="server">
+      <input type="text" placeholder="שם משתמש" name="mName" id="mName"/>
+      <input type="password" placeholder="סיסמה" name="mPw" id="mPw"/>
+      <input type="submit" name="submit" id="submit" />
+      <p class="message"><a href="SignUp">?לא רשום</a></p>
+  
+            <script>
+                $('.message a').click(function () {
+                    $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+                });
+    </script>  </form>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'%3E</script><script  src="./script.js"></script>
+
+</body>            <%= msg %>
+    </msg %>
 </asp:Content>

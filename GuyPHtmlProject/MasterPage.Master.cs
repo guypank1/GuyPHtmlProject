@@ -47,7 +47,7 @@ namespace GuyPHtmlProject
                 loginMsg += "<li><a href='Login.aspx'>התחבר</a></li>";
                 loginMsg += $"<li><a href ='Movies.aspx'> סרטים </a></li>";
                 loginMsg += $"<li><a href = 'PhotoGallery.aspx' > גלריית תמונות</a></li>";
-                loginMsg += "<li><a href='adminLogin.aspx'>דף מנהל</a></li>";
+                loginMsg += "<li><a href='LoginAdmin.aspx'>דף מנהל</a></li>";
             }
             else
             {

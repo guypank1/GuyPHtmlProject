@@ -104,16 +104,13 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminPage.aspx" />
-    <Content Include="App_Data\usersDB.ldf">
-      <DependentUpon>usersDB.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\usersDB.mdf" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -385,6 +382,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
