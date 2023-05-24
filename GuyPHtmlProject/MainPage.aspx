@@ -2,8 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-
-    <style>
+        <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
         * {
@@ -150,37 +149,18 @@
             margin-top: 80px;
         }
     </style>
-    <title></title>
+        <title>asd</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title></title>
+
     <%--picture--%>
     <img  class="right" src ="https://i.ibb.co/Wx8xLpT/harry-flozter-1.png" />
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!DOCTYPE html>
-    <html>
-    <body>
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <div class="wrapper">
-            <ul>
-                <li><a href="MainPage.aspx">Hogwarts</a></li>
-                <li><a href="Movies.aspx">Movies</a></li>
-                <li><a href="PhotoGallery.aspx">PhotoGallery</a></li>
-                <li><a href="..//Signup.aspx">Sign Up</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="title">
-                ...ברוכים הבאים אל
-            </div>
-            <p>
-                &#9889;הוגוורטס&#9889;
-            </p>
-        </div>
-    </body>
-    </html>
+
 
 </asp:Content>
