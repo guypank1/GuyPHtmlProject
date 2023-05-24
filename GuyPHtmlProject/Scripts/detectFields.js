@@ -96,5 +96,3 @@ function detectField2() {
                     document.getElementById("query2").innerHTML = "<input type='text' name='value2' />";
     }
 }
-ComplexQuery.js
-Displaying ComplexQuery.js.

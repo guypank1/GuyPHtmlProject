@@ -113,10 +113,6 @@
                         color: #4158d0;
                     }
 
-        input[type="checkbox"] {
-            display: none;
-        }
-
         .content {
             position: absolute;
             top: 50%;
@@ -190,10 +186,6 @@
                 "class='btn btn-outline-primary'>התנתקות</a><a href='LoginAdmin.aspx' " +
                 "class='btn btn-outline-secondary'>התחברות מנהל</a>":"" %>
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            </div>
-        </td>
-    </tr>
-</table>
 
 
 

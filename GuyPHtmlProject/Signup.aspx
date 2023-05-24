@@ -152,6 +152,7 @@
                     <input type="checkbox" name="hobies" value="1" />כדורגל&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="2" />טניס&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="3" />משחקי מחשב&nbsp;&nbsp;&nbsp;
+                    <br />
                     <input type="checkbox" name="hobies" value="4" />ריקוד&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="hobies" value="5" />אחר&nbsp;&nbsp;&nbsp;
                 </td>
