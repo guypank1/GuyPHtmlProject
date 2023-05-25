@@ -17,7 +17,7 @@ namespace GuyPHtmlProject
             {
                 msg += "<div style='text-align: center; color: red;'>";
                 msg += "<h3>אינך מנהל! אין לך הרשאה לצפות בעמוד זה :(</h3>";
-                msg += "<a href='singers.aspx'>[ המשך ]</a>";
+                msg += "<a href='MainPage.aspx'>[ המשך ]</a>";
                 msg += "</div>";
             }
             else

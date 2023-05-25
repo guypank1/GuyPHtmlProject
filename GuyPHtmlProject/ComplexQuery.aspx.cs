@@ -23,10 +23,10 @@ namespace GuyPHtmlProject
                 msg += "<div style='text-align: center; color:red;'>";
                 msg += "<h3>אינך מנהל! אין לך הרשאה להשתמש בדף זה :(</h3>";
                 msg += "<a href='MainPage.aspx'>[ המשך ]</a>";
-                msg += "<div>";
+                msg += "/<div>";
                 showContent = false;
             }
-            if (showContent)
+            else
             {
                 string field1 = Request.Form["field1"];
                 string field2 = Request.Form["field2"];
@@ -97,7 +97,6 @@ namespace GuyPHtmlProject
                     else
                     {
                         st = "<table border='1' align='center'>";
-                        st += "<tr>";
                         st += "<th>שם משתמש</th>";
                         st += "<th>שם פרטי</th>";
                         st += "<th>שם משפחה</th>";
@@ -106,7 +105,11 @@ namespace GuyPHtmlProject
                         st += "<th>מגדר</th>";
                         st += "<th>מס' טלפון</th>";
                         st += "<th>עיר</th>";
-                        st += "<th>סיסמה</th>";
+                        st += "<th>כדורגל</th>";
+                        st += "<th>טניס</th>";
+                        st += "<th>משחקי מחשב</th>";
+                        st += "<th>ריקוד</th>";
+                        st += "<th>אחר</th>";
                         st += "</tr>";
 
                         for (int i = 0; i < length; i++)

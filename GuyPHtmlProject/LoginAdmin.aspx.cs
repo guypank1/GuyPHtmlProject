@@ -26,8 +26,8 @@ namespace GuyPHtmlProject
                 int length = table.Rows.Count;
                 if (length == 0)
                 {
-                    msg += "<div style = 'text-align: center; color: red;'>";
-                    msg += "<h3>אינך מנהל! אין לך הרשאה לצפות בדף זה</h3>";
+                    msg += "<div style = 'text-align: center; color: magenta;'>";
+                    msg += "<h3>אינך מנהל! פרטים שהוזנו אינם נכונים</h3>";
                     msg += "<a href.'MainPage.aspx'>[ המשך ]</a>";
                     msg += "</div>";
                 }
