@@ -37,14 +37,14 @@
     <img src="https://i.pinimg.com/originals/97/d0/f7/97d0f7e24d1c13167c4ff59abe52f09e.jpg" alt="Workplace" usemap="#workmap" width="1000" height="500">
 
     <map name="workmap">
-        <area shape="rect" coords="50,20,220,235" alt="FirstMovie" href="/MovieSeasons/FirstMovie.aspx">
-        <area shape="rect" coords="270,20,490,235" alt="SecondMovie" href="/MovieSeasons/SecondMovie.aspx">
-        <area shape="rect" coords="515,20,730,235" alt="ThirdMovie" href="/MovieSeasons/ThirdMovie.aspx">
-        <area shape="rect" coords="760,20,975,235" alt="FourthMovie" href="/MovieSeasons/FourthMovie.aspx">
-        <area shape="rect" coords="25,260,240,500" alt="FifthMovie" href="/MovieSeasons/FifthMovie.aspx">
-        <area shape="rect" coords="270,260,485,475" alt="SixthMovie" href="/MovieSeasons/SixthMovie.aspx">
-        <area shape="rect" coords="515,260,730,475" alt="SeventhMovie" href="/MovieSeasons/SeventhMovie.aspx">
-        <area shape="rect" coords="760,260,975,475" alt="EigthMovie" href="/MovieSeasons/EighthMovie.aspx">
+        <area shape="rect" coords="50,20,220,235" alt="FirstMovie" href="FirstMovie.aspx">
+        <area shape="rect" coords="270,20,490,235" alt="SecondMovie" href="SecondMovie.aspx">
+        <area shape="rect" coords="515,20,730,235" alt="ThirdMovie" href="ThirdMovie.aspx">
+        <area shape="rect" coords="760,20,975,235" alt="FourthMovie" href="FourthMovie.aspx">
+        <area shape="rect" coords="25,260,240,500" alt="FifthMovie" href="FifthMovie.aspx">
+        <area shape="rect" coords="270,260,485,475" alt="SixthMovie" href="SixthMovie.aspx">
+        <area shape="rect" coords="515,260,730,475" alt="SeventhMovie" href="SeventhMovie.aspx">
+        <area shape="rect" coords="760,260,975,475" alt="EigthMovie" href="EighthMovie.aspx">
     </map>
 
 </asp:Content>

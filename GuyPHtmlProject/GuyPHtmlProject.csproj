@@ -130,14 +130,14 @@
     <Content Include="LoginAdmin.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
-    <Content Include="MovieSeasons\EighthMovie.aspx" />
-    <Content Include="MovieSeasons\FifthMovie.aspx" />
-    <Content Include="MovieSeasons\FirstMovie.aspx" />
-    <Content Include="MovieSeasons\FourthMovie.aspx" />
-    <Content Include="MovieSeasons\SecondMovie.aspx" />
-    <Content Include="MovieSeasons\SeventhMovie.aspx" />
-    <Content Include="MovieSeasons\SixthMovie.aspx" />
-    <Content Include="MovieSeasons\ThirdMovie.aspx" />
+    <Content Include="EighthMovie.aspx" />
+    <Content Include="FifthMovie.aspx" />
+    <Content Include="FirstMovie.aspx" />
+    <Content Include="FourthMovie.aspx" />
+    <Content Include="SecondMovie.aspx" />
+    <Content Include="SeventhMovie.aspx" />
+    <Content Include="SixthMovie.aspx" />
+    <Content Include="ThirdMovie.aspx" />
     <Content Include="Movies.aspx" />
     <Content Include="ComplexQuery.aspx" />
     <Content Include="PhotoGallery.aspx" />
@@ -256,60 +256,60 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\EighthMovie.aspx.cs">
+    <Compile Include="EighthMovie.aspx.cs">
       <DependentUpon>EighthMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\EighthMovie.aspx.designer.cs">
+    <Compile Include="EighthMovie.aspx.designer.cs">
       <DependentUpon>EighthMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\FifthMovie.aspx.cs">
+    <Compile Include="FifthMovie.aspx.cs">
       <DependentUpon>FifthMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\FifthMovie.aspx.designer.cs">
+    <Compile Include="FifthMovie.aspx.designer.cs">
       <DependentUpon>FifthMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\FirstMovie.aspx.cs">
+    <Compile Include="FirstMovie.aspx.cs">
       <DependentUpon>FirstMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\FirstMovie.aspx.designer.cs">
+    <Compile Include="FirstMovie.aspx.designer.cs">
       <DependentUpon>FirstMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\FourthMovie.aspx.cs">
+    <Compile Include="FourthMovie.aspx.cs">
       <DependentUpon>FourthMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\FourthMovie.aspx.designer.cs">
+    <Compile Include="FourthMovie.aspx.designer.cs">
       <DependentUpon>FourthMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\SecondMovie.aspx.cs">
+    <Compile Include="SecondMovie.aspx.cs">
       <DependentUpon>SecondMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\SecondMovie.aspx.designer.cs">
+    <Compile Include="SecondMovie.aspx.designer.cs">
       <DependentUpon>SecondMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\SeventhMovie.aspx.cs">
+    <Compile Include="SeventhMovie.aspx.cs">
       <DependentUpon>SeventhMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\SeventhMovie.aspx.designer.cs">
+    <Compile Include="SeventhMovie.aspx.designer.cs">
       <DependentUpon>SeventhMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\SixthMovie.aspx.cs">
+    <Compile Include="SixthMovie.aspx.cs">
       <DependentUpon>SixthMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\SixthMovie.aspx.designer.cs">
+    <Compile Include="SixthMovie.aspx.designer.cs">
       <DependentUpon>SixthMovie.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MovieSeasons\ThirdMovie.aspx.cs">
+    <Compile Include="ThirdMovie.aspx.cs">
       <DependentUpon>ThirdMovie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MovieSeasons\ThirdMovie.aspx.designer.cs">
+    <Compile Include="ThirdMovie.aspx.designer.cs">
       <DependentUpon>ThirdMovie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Movies.aspx.cs">
