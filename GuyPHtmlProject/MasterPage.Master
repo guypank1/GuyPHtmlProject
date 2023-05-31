@@ -173,9 +173,9 @@
 <input type="checkbox" id="active">
 <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
 
-<img src="https://anonsharing.com/cache/plugins/filepreviewer/21083/22e531d43c811f344f3e787986bd9ac9dc7fe05ff4d20e6094eba558f4b643ee/1100x800_cropped.jpg"
-    width="100"
-    height="100"/>
+<img style="position:fixed; right:90%; top:0px;" src="https://i.ibb.co/m0HPw7k/asdiuhasefuhsdrligfuh-removebg-preview.png"
+    width="125"
+    height="125"/>
 <div class="wrapper">
     <ul>
         <%= loginMsg %>
