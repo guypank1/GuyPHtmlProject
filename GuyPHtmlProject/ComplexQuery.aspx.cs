@@ -144,19 +144,19 @@ namespace GuyPHtmlProject
                 else
                 {
                     st += "<tr>";
-                    st += "<th style = 'text align: center;  width: 80px;' >שם משתמש'</th>";
-                    st += "<th style = 'text align: center;  width: 80px;' >שם פרטי'</th>";
-                    st += "<th style = 'text align: center; width: 60px;' >שם משפחה'</th>";
-                    st += "<th style = 'text align: center;  width: 140px;' >דוא'ל'</th>";
-                    st += "<th style = 'text align: center; width: 100px;' >מגדר'</th>";
-                    st += "<th style = 'text align: center;'>שנת לידה'</th>";
-                    st += "<th style = 'text align: center; width: 150px;' >טלפון'</th>";
-                    st += "<th style = 'text align: center;' >כדורגל'</th>";
-                    st += "<th style = 'text align: center;' >טניס'</th>";
-                    st += "<th style = 'text align: center;' >משחקי מחשב'</th>";
-                    st += "<th style = 'text align: center;' >ריקוד'</th>";
-                    st += "<th style = 'text align: center;' >אחר'</th>";
-                    st += "<th style = 'text align: center; width: 100px;' >סיסמה'</th>";
+                    st += "<th style = 'text align: center;  width: 80px;' >שם משתמש</th>";
+                    st += "<th style = 'text align: center;  width: 80px;' >שם פרטי</th>";
+                    st += "<th style = 'text align: center; width: 60px;' >שם משפחה</th>";
+                    st += "<th style = 'text align: center;  width: 140px;' >דוא'ל</th>";
+                    st += "<th style = 'text align: center; width: 100px;' >מגדר</th>";
+                    st += "<th style = 'text align: center;'>שנת לידה</th>";
+                    st += "<th style = 'text align: center; width: 150px;' >טלפון</th>";
+                    st += "<th style = 'text align: center;' >כדורגל</th>";
+                    st += "<th style = 'text align: center;' >טניס</th>";
+                    st += "<th style = 'text align: center;' >משחקי מחשב</th>";
+                    st += "<th style = 'text align: center;' >ריקוד</th>";
+                    st += "<th style = 'text align: center;' >אחר</th>";
+                    st += "<th style = 'text align: center; width: 100px;' >סיסמה</th>";
                     st += "</tr>";
 
                 }

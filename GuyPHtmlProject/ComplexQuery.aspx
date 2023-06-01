@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ComplexQuery.aspx.cs" Inherits="GuyPHtmlProject.ComplexQuery"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">.</p>
+   <<%--p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">.</p>--%>
     <script src="Scripts/detectFields.js">
 
     </script>
