@@ -1,8 +1,12 @@
 ﻿function chkForm() {
+    // --- כל באג הכי קטן שגורם לפונקציה לא להתקמפל יגרור מצב שאין אימות ---
+    // --- C# יופיעו ישירות ב breakpoints מקרה כזה יתאפיין בכך ש- ---
+    // --- JS הדפדפן בעצם פוסח על ה
     //--- בדיקת שם משתמש ---
-    var uName = document.getElementById("uName").value;
+    var uNameElement = document.getElementById("uName"); // disabled שולפים את כל האלמנט כדי שנוכל לבדוק אם הוא 
+    // (זה יאפשר להבדיל בין מצב רישום (צריך בדיקה) למצב עדכון (לא צריך בדיקה
     //alert("uName = " + uName);
-    if (!userNameOK(uName))
+    if (!uNameElement.disabled && !userNameOK(uNameElement.value))
         return false;
 
     //--- בדיקת שם פרטי ---
@@ -72,14 +76,48 @@
             hobChecked = true;
     // הצגת הודעת שגיאה אם לא נבחרה אפשרות אחת לפחות
     if (hobChecked == false) {
-        document.getElementById("mHobies").value = "תחביב לא נבחר";
+        document.getElementById("mHobies").value = "תחביב נבחר לא;"
         document.getElementById("mHobies").style.display = "inline";
         return false;
     }
     else
         document.getElementById("mHobies").style.display = "none";
 
+    //--- בדיקה עבור סיסמא --
+    var pw = document.getElementById("pw").value;
+    var pw1 = document.getElementById("pw1").value;
+    // alert("pw = " + pw + "\n pw1 = " + pw1);
 
+    if (pw.length < 6 || pw.length > 15) {
+        msg = " סיסמא חייבת להיות בין 6 - 15 תווים ";
+
+        document.getElementById("mPw").value = msg;
+        document.getElementById("mPw").style.display = "inline";
+        return false;
+    }
+    else
+        document.getElementById("mPw").style.display = "none";
+
+    //--- בדיקה האם הסיסמא שווה לסיסמת האימות ---
+    // --- כולל צ'יט לסיסמה 111111 ---
+    // אחרת למשתמש חדש נרצה להבטיח זהות סיסמאות
+    // למי שמבצע עדכון נרצה להבטיח זהות רק אם הוא מילא סיסמא שונה מזו שקיימת כבר
+    // שונה ממה שהיה פעם, הוא יקבל פטור מבדיקת הזהות כל עוד הסיסמה השנייה ריקה  pw  כיוון שבשלב זה אין דרך פשוטה לראות אז אם השדה
+    // הכוונה כאן לא לאלץ משתמש לגעת בסיסמא
+    // בסביבת פרודקשן דווקא היינו דורשים זאת לא כדי לסרבל, אלא כדרישת אבטחה נוספת
+    //if (pw != "111111" && (pw != pw1 && !uNameElement.disabled || uNameElement.disabled && pw != pw1 && pw1 != "")) {
+    if (pw != pw1) {
+        msg = " הסיסמא וסיסמת האימות אינם זהות ";
+
+        document.getElementById("mPw1").value = msg;
+        document.getElementById("mPw1").style.display = "inline";
+        return false;
+    }
+    else
+        document.getElementById("mPw1").style.display = "none";
+
+    //alert("הטופס תקין");
+    return true;
 }
 
 //---     פעולה המחזירה אמת אם המחרוזת לא מכילה ---
@@ -196,8 +234,6 @@ function yearBornOk(year) {
 
     if (isNaN(year))         //  isNaN = is Not a Number
         msg = "שנת לידה חייבת להכיל ספרות בלבד";
-    else if (year < 1900)
-        msg = "שנת לידה חייבת להיות ב-4 ספרות";
     else if (year < old)
         msg = "מבוגר מדי! שנת לידה חייבת להיות גדולה מ- " + (old - 1);
     else if (year >= young)

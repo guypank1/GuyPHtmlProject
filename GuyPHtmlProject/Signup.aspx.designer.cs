@@ -11,7 +11,7 @@ namespace GuyPHtmlProject
 {
 
 
-    public partial class Signup
+    public partial class SignUp
     {
     }
 }
